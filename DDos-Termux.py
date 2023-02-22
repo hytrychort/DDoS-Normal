@@ -18,7 +18,7 @@ bytes = random._urandom(1490)
 #############
 
 
-ip = raw_input("IP Target : ")
+ip = input("IP Target : ")
 port = input("Port       : ")
 
 sent = 0
