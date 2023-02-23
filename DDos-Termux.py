@@ -23,7 +23,7 @@ port = input("Port       : ")
 
 sent = 0
 while True:
-     sock.sendto(bytes, (ip.encode(), port.encode()))
+     sock.sendto(bytes, (ip.split("."), port))
      sent = sent + 1
      port = port + 1
      print ("Sent %s packet to %s throught port:%s")(sent,ip,port)
